@@ -1,0 +1,38 @@
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+main {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    gap: 10px;
+}
+
+article {
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px;
+    background-color: aqua;
+}
+
+article:nth-child(even) {
+    color: white;
+    background-color: rgb(112, 212, 112);
+}
+
+article:nth-child(odd) {
+    color: black;
+    background-color: rgb(255, 208, 0);
+}
+
+article:first-child {
+    color: white;
+    background-color: rgb(132, 132, 255);
+}
+
+article:last-child {
+    color: white;
+    background-color: red;
+}
